@@ -1,0 +1,19 @@
+<html>
+<title>
+    Article List
+</title>
+<body>
+    <div>
+        <h1><a href="/">OSS Articles</a></h1>
+    </div>
+            
+    {% for article in articles %}
+        <div>
+            <h1><a href="">{{ article.title }}</a></h1>
+            <p>created: {{ article.created_date }}</p>
+            <p>updated: {{ article.updated_date }}</p>
+            <p>{{ article.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
