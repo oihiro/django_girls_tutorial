@@ -1,0 +1,12 @@
+{% extends 'oss/base.html' %}
+
+{% block content %}
+    <div class="article">
+        <h1>{{ article.title }}</h1>
+        <div class="date">
+            <p>created: {{ article.created_date }}</p>
+            <p>updated: {{ article.updated_date }}</p>
+        </div>
+        <p>{{ article.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
